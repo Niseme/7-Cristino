@@ -15,5 +15,19 @@ body {
 }
 
 :root {
-  --primary-color: #dff3df;
+  --primary-color: #e54b4b;
+  --primary-dark-color: #dd2020;
+  --grey-color: #f9fafd;
+  --dark-color: #3c4858;
+  --dark-color-anti: #fff;
+}
+.bg-grey {
+  background-color: var(--grey-color);
+}
+.bg-dark {
+  background-color: var(--dark-color);
+  color: var(--dark-color-anti);
+}
+.center {
+  text-align: center;
 }
