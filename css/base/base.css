@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-color: #e54b4b;
+  --primary-color-anti: #fff;
+  --primary-dark-color: #dd2020;
+  --primary-dark-color-anti: #fff;
+  --grey-color: #f9fafd;
+  --dark-color: #3c4858;
+  --dark-color-anti: #fff;
+}
+
 body,
 body * {
   margin: 0;
@@ -13,16 +23,13 @@ body * {
 body {
   font-family: "Montserrat", "Roboto", sans-serif;
 }
-
-:root {
-  --primary-color: #e54b4b;
-  --primary-color-anti: #fff;
-  --primary-dark-color: #dd2020;
-  --primary-dark-color-anti: #fff;
-  --grey-color: #f9fafd;
-  --dark-color: #3c4858;
-  --dark-color-anti: #fff;
+p {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #777;
 }
+
 .bg-grey {
   background-color: var(--grey-color);
 }
@@ -30,6 +37,10 @@ body {
   background-color: var(--dark-color);
   color: var(--dark-color-anti);
 }
+.text-primary {
+  color: var(--primary-color);
+}
+
 .center {
   text-align: center;
 }
