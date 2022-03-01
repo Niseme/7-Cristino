@@ -44,3 +44,49 @@ p {
 .center {
   text-align: center;
 }
+.section-title {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50% 50% 0;
+  border: 3px solid var(--primary-color);
+  position: absolute;
+  bottom: -31.5px;
+  left: 50%;
+  transform: translateX(0%) rotate(225deg);
+}
+.section-title::after {
+  border-radius: 50% 50% 50% 0;
+  border: 3px solid var(--primary-color);
+  position: absolute;
+  bottom: -31.5px;
+  left: 50%;
+  transform: translateX(-100%) rotate(45deg);
+}
+
+.section-title > .line::before,
+.section-title > .line::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(calc(-100% - 26px));
+  background-color: var(--primary-color);
+}
+.section-title > .line::after {
+  transform: translateX(26px);
+}
+.section-description {
+  color: #888;
+}
